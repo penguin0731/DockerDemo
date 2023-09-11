@@ -28,7 +28,7 @@ COPY --from=0 /webapp/dist /usr/share/nginx/html
 
 COPY --from=0 /webapp/docker-run.sh /docker-run.sh
 
-# COPY /nginx/nginx.conf /etc/nginx/nginx.conf
+# COPY /nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # ENV NODE_ENV=development
 
